@@ -1,0 +1,221 @@
+@import url(../../bower_components/bootstrap/dist/css/bootstrap.css);
+.wrap_header {
+  height: 17%;
+  width: 100%;
+  line-height: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1; }
+
+.logo img {
+  position: fixed;
+  max-height: 17%;
+  max-width: 100%;
+  vertical-align: middle;
+  margin-left: 45.5%;
+  /* 	margin-right:  -($header_height/1.8); */ }
+
+.name {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%; }
+
+.name_text {
+  flex-basis: 50%;
+  margin-left: 3%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.3em; }
+
+.name_contacts {
+  flex-basis: 50%;
+  margin-right: 3%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none; }
+  .name_contacts li {
+    width: 100%;
+    text-align: right; }
+
+.links {
+  height: 50%;
+  width: 100%; }
+
+.black_line {
+  display: block;
+  height: 10%;
+  width: 100%;
+  background-color: black; }
+
+.wrap_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  height: 90%;
+  width: 100%; }
+
+.header_link {
+  flex-basis: 14%;
+  line-height: 100%;
+  flex-shrink: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  /* font-family: 'Kelly Slab', cursive; */
+  /* font-family: 'Stalinist One', cursive; */ }
+  .header_link:hover {
+    background-color: blue; }
+
+.empty_link {
+  flex-basis: 16%;
+  flex-shrink: 0; }
+
+.header_link_zindex {
+  zoom: 1;
+  z-index: 2; }
+
+/* green */
+/*gray*/
+/* PROMO */
+.promo {
+  position: relative;
+  width: 100%; }
+  .promo img {
+    max-height: 100%;
+    max-width: 100%; }
+
+.promo_arrow_left, .promo_arrow_right {
+  position: absolute;
+  top: 52%;
+  color: white; }
+
+.promo_arrow_left {
+  left: 3%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  .promo_arrow_left:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+.promo_arrow_right {
+  right: 3%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  .promo_arrow_right:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+/* PROMO */
+/* SLIDER */
+.products_slider {
+  width: 100%;
+  height: 30%;
+  position: relative;
+  background-color: pink; }
+
+.slider_arrow_left, .slider_arrow_right {
+  position: absolute;
+  top: 45%;
+  color: #898989;
+  z-index: 1; }
+
+.slider_arrow_left {
+  left: 3%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  .slider_arrow_left:hover {
+    color: #5bad49; }
+
+.slider_arrow_right {
+  right: 3%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  .slider_arrow_right:hover {
+    color: #5bad49; }
+
+.slider_left_field, .slider_right_field {
+  position: absolute;
+  top: 0px;
+  display: block;
+  height: 100%;
+  width: 8%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  .slider_left_field:hover, .slider_right_field:hover {
+    background-color: rgba(255, 255, 255, 0.84); }
+
+.slider_right_field {
+  right: 0px; }
+
+.wrap_slider_items {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch; }
+
+.slider_items {
+  flex-basis: 19%;
+  background-color: blue;
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap; }
+  .slider_items .slider_img {
+    flex-basis: 100%;
+    height: 65%;
+    margin: 1em 1em;
+    background-color: yellow; }
+    .slider_items .slider_img img {
+      max-width: 100%;
+      max-height: 100%; }
+  .slider_items .slider_name {
+    flex-basis: 100%;
+    height: 18%;
+    margin: 0 1em;
+    background-color: yellow;
+    text-align: center; }
+
+/* SLIDER */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 16px; }
+
+.main_body {
+  height: 100%;
+  width: 100%; }

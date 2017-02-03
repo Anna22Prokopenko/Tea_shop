@@ -1,0 +1,14 @@
+@import "header";
+@import "body";
+@import "../../bower_components/bootstrap/dist/css/bootstrap.css";
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Philosopher', sans-serif;
+	font-size: $font_size;
+}
+.main_body {
+	height: 100%;
+	width: 100%;
+}

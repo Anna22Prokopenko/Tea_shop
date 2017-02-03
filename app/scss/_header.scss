@@ -1,0 +1,94 @@
+$header_height: 17%;
+$font_size: 16px;
+
+.wrap_header {
+	height: $header_height;
+	width: 100%;
+	line-height: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+
+.logo img {
+	position: fixed;
+	max-height: $header_height;
+	max-width: 100%;
+	vertical-align: middle;
+	margin-left: 45.5%;
+/* 	margin-right:  -($header_height/1.8); */
+}
+.name {
+	height: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	width: 100%;
+	
+}
+.name_text {
+	flex-basis: 50%;
+	margin-left: 3%;
+	display: flex;
+	align-items: center;
+	font-size: $font_size+2;
+	line-height: 1.3em;
+}
+.name_contacts {
+	flex-basis: 50%;
+	margin-right: 3%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	list-style: none;
+		li {
+			width: 100%;
+			text-align: right;
+		}
+}
+.links {
+	height: 50%;
+	width: 100%;
+}
+.black_line {
+	display: block;
+	height: 10%;
+	width: 100%;
+	background-color: black;
+}
+.wrap_links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	height: 90%;
+	width: 100%;
+}
+.header_link {
+	flex-basis: 14%;
+	line-height: 100%;
+	flex-shrink:1;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: $font_size+4;
+	/* font-family: 'Kelly Slab', cursive; */
+	/* font-family: 'Stalinist One', cursive; */
+		&:hover {
+			background-color: blue;
+		}
+}
+.empty_link {
+	flex-basis: 16%;
+	flex-shrink:0;
+}
+.header_link_zindex {
+	zoom: 1;
+	z-index: 2;
+}
